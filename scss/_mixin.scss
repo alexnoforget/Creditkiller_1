@@ -1,0 +1,23 @@
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$addMobsize: $addSize + $addSize * 0.7;
+
+	@media (max-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addMobsize} * ((100vw - 360px) / #{$maxWidth}));
+	}
+	@media (min-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+	}
+}
+
+@mixin adaptiv-size($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$addMobsize: $addSize + $addSize * 0.7;
+
+	@media (max-width: 767px) {
+		height: calc(#{$mobSize + px} + #{$addMobsize} * ((100vw - 360px) / #{$maxWidth}));
+	}
+	@media (min-width: 767px) {
+		height: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+	}
+}

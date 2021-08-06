@@ -1,0 +1,61 @@
+.button {
+	font-family: Gilroy;
+	font-size: 18px;
+	line-height: 26px;
+	width: 244px;
+	height: 60px;
+	border-radius: 50px;
+
+	&-blue {
+		letter-spacing: 0.03em;
+		background: #1e253a;
+		box-shadow: 6px 6px 62px rgba(30, 37, 58, 0.08);
+		color: white;
+		transition: background 0.3s ease 0s;
+
+		&:hover {
+			background: #0c0d0e;
+			box-shadow: 6px 6px 62px rgba(30, 37, 58, 0.08);
+		}
+
+		&:focus {
+			background: rgba(30, 37, 58, 0.5);
+			border: 1px solid #1e253a;
+			color: #1e253a;
+		}
+	}
+	&-yellow {
+		letter-spacing: 0.03em;
+		background: #ffc40e;
+		box-shadow: 6px 6px 62px rgba(30, 37, 58, 0.08);
+		color: rgba(30, 37, 58, 1);
+		transition: background 0.3s ease 0s;
+
+		&:hover {
+			background: #ffab01;
+			box-shadow: 6px 6px 62px rgba(30, 37, 58, 0.08);
+		}
+
+		&:focus {
+			background: rgba(255, 196, 14, 0.2);
+			border: 1px solid #ffc40e;
+			color: #1e253a;
+		}
+	}
+	&-white {
+		letter-spacing: 0.03em;
+		background: #ffffff;
+		color: #163f59;
+		transition: background 0.3s ease 0s;
+
+		&:hover {
+			background: rgba(242, 242, 242, 1);
+		}
+
+		&:focus {
+			background: #ffffff;
+			border: 1px solid #f2f2f2;
+			color: #1e253a;
+		}
+	}
+}
